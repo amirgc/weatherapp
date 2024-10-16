@@ -10,6 +10,7 @@ namespace WeatherApp.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
+            // add comment
             _logger = logger;
         }
 
