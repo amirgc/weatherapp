@@ -38,7 +38,6 @@ jobs:
             dns-name-label: ${{ secrets.RESOURCE_GROUP }}${{ github.run_number }}
             image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/weatherapp:${{ github.sha }}
             ports: 80
-            environment-variables: "'PORT'='80'"
             registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
