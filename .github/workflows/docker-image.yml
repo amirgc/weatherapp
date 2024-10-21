@@ -41,4 +41,4 @@ jobs:
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
             name: weatherapp
-            location: 'eastus'
+            location: 'east us'
