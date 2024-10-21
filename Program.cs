@@ -1,5 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure the web host defaults
+builder.Host.ConfigureWebHostDefaults(webBuilder =>
+{
+    webBuilder.UseUrls("http://*:80"); // Ensure the app listens on port 80
+});
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
