@@ -1,6 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure the web host defaults
 // Configure Kestrel to listen on port 80
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
