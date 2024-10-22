@@ -31,4 +31,8 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapControllerRoute(
+    name: "api",
+    pattern: "api/{controller}/{action}/{id?}"); // Map API controllers with a specific pattern
+
 app.Run();
