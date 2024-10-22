@@ -28,7 +28,7 @@ jobs:
           
       - name: 'Build and push image'
         run: |
-            docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/weatherapp:${{ github.sha }}
+            docker build ./Docker -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/weatherapp:${{ github.sha }}
             docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/weatherapp:${{ github.sha }}
 
       # - name: 'Deploy to Azure Container Instances'
