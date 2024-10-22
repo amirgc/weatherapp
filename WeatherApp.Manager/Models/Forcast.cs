@@ -1,6 +1,6 @@
 ﻿namespace WeatherApp.Manager.Models
 {
-    public class Forcast
+    public class ForcastInfo
     {
         public string City { get; set; }
         public string State { get; set; }

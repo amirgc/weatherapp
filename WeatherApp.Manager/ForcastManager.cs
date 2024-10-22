@@ -4,20 +4,20 @@ namespace WeatherApp.Manager
 {
     public interface IForcastManager
     {
-        Forcast GetForcast();
-        Forcast GetForcastByCityName(string cityName);
-        Forcast GetForcastByZipCode(string zipCode);
-        Forcast GetForcastByLatLon(double latitude, double longitude);
-        Forcast GetForcastByCityAndState(string cityName, string state);
-        Forcast GetForcastByCityAndCountryCode(string cityName, string countryCode);
+        ForcastInfo GetForcast();
+        ForcastInfo GetForcastByCityName(string cityName);
+        ForcastInfo GetForcastByZipCode(string zipCode);
+        ForcastInfo GetForcastByLatLon(double latitude, double longitude);
+        ForcastInfo GetForcastByCityAndState(string cityName, string state);
+        ForcastInfo GetForcastByCityAndCountryCode(string cityName, string countryCode);
     }
 
     public class ForcastManager : IForcastManager
     {
-        public Forcast GetForcast()
+        public ForcastInfo GetForcast()
         {
             // Return mock data
-            return new Forcast
+            return new ForcastInfo
             {
                 City = "New York",
                 State = "NY",
@@ -30,10 +30,10 @@ namespace WeatherApp.Manager
             };
         }
 
-        public Forcast GetForcastByCityName(string cityName)
+        public ForcastInfo GetForcastByCityName(string cityName)
         {
             // Return mock data
-            return new Forcast
+            return new ForcastInfo
             {
                 City = cityName,
                 State = "NY",
@@ -46,10 +46,10 @@ namespace WeatherApp.Manager
             };
         }
 
-        public Forcast GetForcastByZipCode(string zipCode)
+        public ForcastInfo GetForcastByZipCode(string zipCode)
         {
             // Return mock data
-            return new Forcast
+            return new ForcastInfo
             {
                 City = "Los Angeles",
                 State = "CA",
@@ -62,10 +62,10 @@ namespace WeatherApp.Manager
             };
         }
 
-        public Forcast GetForcastByLatLon(double latitude, double longitude)
+        public ForcastInfo GetForcastByLatLon(double latitude, double longitude)
         {
             // Return mock data
-            return new Forcast
+            return new ForcastInfo
             {
                 City = "San Francisco",
                 State = "CA",
@@ -78,10 +78,10 @@ namespace WeatherApp.Manager
             };
         }
 
-        public Forcast GetForcastByCityAndState(string cityName, string state)
+        public ForcastInfo GetForcastByCityAndState(string cityName, string state)
         {
             // Return mock data
-            return new Forcast
+            return new ForcastInfo
             {
                 City = cityName,
                 State = state,
@@ -94,10 +94,10 @@ namespace WeatherApp.Manager
             };
         }
 
-        public Forcast GetForcastByCityAndCountryCode(string cityName, string countryCode)
+        public ForcastInfo GetForcastByCityAndCountryCode(string cityName, string countryCode)
         {
             // Return mock data
-            return new Forcast
+            return new ForcastInfo
             {
                 City = cityName,
                 State = "NA",
